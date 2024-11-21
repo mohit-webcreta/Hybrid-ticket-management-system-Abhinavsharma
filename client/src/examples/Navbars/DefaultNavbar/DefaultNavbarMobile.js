@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Vision UI Free React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
@@ -23,10 +7,10 @@ import PropTypes from "prop-types";
 import Menu from "@mui/material/Menu";
 // import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard React components
+//React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard React example components
+//React example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 import palette from "assets/theme/base/colors";
 import tripleLinearGradient from "assets/theme/functions/tripleLinearGradient";
@@ -66,8 +50,8 @@ function DefaultNavbarMobile({ open, close }) {
       }}
     >
       <VuiBox px={0.5}>
-        <DefaultNavbarLink icon="donut_large" name="dashboard" route="/dashboard" />
-        <DefaultNavbarLink icon="person" name="profile" route="/profile" />
+        {/* <DefaultNavbarLink icon="donut_large" name="dashboard" route="/dashboard" /> */}
+        {/* <DefaultNavbarLink icon="person" name="profile" route="/profile" /> */}
         <DefaultNavbarLink icon="account_circle" name="sign up" route="/authentication/sign-up" />
         <DefaultNavbarLink icon="key" name="sign in" route="/authentication/sign-in" />
       </VuiBox>

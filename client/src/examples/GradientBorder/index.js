@@ -1,25 +1,9 @@
-/*!
 
-=========================================================
-* Vision UI Free React - v1.0.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// Vision UI Dashboard React components
+//React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard React context
+//React context
 
 function GradientBorder(props) {
   const { backgroundImage, children, borderRadius, width, minWidth, ...rest } = props;
@@ -32,9 +16,21 @@ function GradientBorder(props) {
       borderRadius={borderRadius}
       sx={{
         height: "fit-content",
-        backgroundImage: backgroundImage
-          ? backgroundImage
-          : "radial-gradient(94.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)",
+        
+        
+        borderRadius: borderRadius.lg,
+        border: `0.5px solid grey`,
+        "& ::placeholder": {
+          color: `white !important`,
+          fontSize: "12px",
+        },
+
+
+
+
+        // backgroundImage: backgroundImage
+        //   ? backgroundImage
+        //   : "radial-gradient(94.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)",
       }}
       {...rest}
     >
